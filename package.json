@@ -25,7 +25,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "knex": "^0.16.3",
-    "sqlite3": "^4.0.6"
+    "sqlite3": "^4.0.8"
   },
   "devDependencies": {
     "knex-cleaner": "^1.1.4",
