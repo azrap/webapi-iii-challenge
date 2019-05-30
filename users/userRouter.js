@@ -7,7 +7,7 @@ const Posts = require('../posts/postDb.js');
 const router = express.Router();
 
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
     try {
         const user = await Users.insert(req.body)
         res.status(201).json(user);
@@ -110,7 +110,7 @@ router.delete('/:id', async (req, res) => {
 
 });
 
-router.put('/:id', (req, res) => {
+router.put('/:id', async (req, res) => {
     try {
         const user = await Users.update(req.params,id, req.body)
 

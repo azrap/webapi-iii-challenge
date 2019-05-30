@@ -6,8 +6,7 @@ module.exports = {
   getUserPosts,
   insert,
   update,
-  remove,
-  insertPost
+  remove
 };
 
 function get() {
