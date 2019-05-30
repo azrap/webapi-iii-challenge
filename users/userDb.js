@@ -47,6 +47,4 @@ function remove(id) {
     .del();
 }
 
-function insertPost(post) {
-  return db('posts').insert(post).then(ids => ({ id: ids[0] }));
-}
+
