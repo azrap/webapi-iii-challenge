@@ -6,7 +6,7 @@ module.exports = {
   getUserPosts,
   insert,
   update,
-  remove,
+  remove
 };
 
 function get() {
@@ -45,3 +45,5 @@ function remove(id) {
     .where('id', id)
     .del();
 }
+
+
